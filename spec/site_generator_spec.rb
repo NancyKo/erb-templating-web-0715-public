@@ -80,7 +80,7 @@ describe 'SiteGenerator' do
     end
 
     it 'uses ERB' do
-      binding.pry
+      # binding.pry
       expect_any_instance_of(ERB).to receive(:result).at_least(25).times
       site_generator.generate_pages!
     end
